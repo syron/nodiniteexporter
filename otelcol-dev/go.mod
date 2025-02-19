@@ -5,7 +5,6 @@ module go.opentelemetry.io/collector/cmd/builder
 go 1.23.5
 
 require (
-	github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250206223650-f9f5e0363f97
 	go.opentelemetry.io/collector/component v0.119.0
 	go.opentelemetry.io/collector/confmap v1.24.0
 	go.opentelemetry.io/collector/confmap/provider/envprovider v1.18.0

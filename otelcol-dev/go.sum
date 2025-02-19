@@ -1,5 +1,3 @@
-github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250206223650-f9f5e0363f97 h1:kZRXSxl9CQN5JRHS6zAejbS9naiYf4HBixtk++d5JRE=
-github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250206223650-f9f5e0363f97/go.mod h1:Vp5YjVfc1PwGqV5j6js7ruDzf3F8jt7ag2xEnwK8Xwk=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/cenkalti/backoff/v4 v4.3.0 h1:MyRJ/UdXutAwSAT+s3wNd7MfTIcy71VQueUuFK343L8=
