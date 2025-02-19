@@ -14,7 +14,7 @@ import (
 	otlpexporter "go.opentelemetry.io/collector/exporter/otlpexporter"
 	batchprocessor "go.opentelemetry.io/collector/processor/batchprocessor"
 	otlpreceiver "go.opentelemetry.io/collector/receiver/otlpreceiver"
-	nodiniteexporter "github.com/syron/nodiniteexporter"
+	nodiniteexporter "github.com/syron/nodiniteexporter/nodiniteexporter"
 )
 
 func components() (otelcol.Factories, error) {

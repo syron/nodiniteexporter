@@ -1,4 +1,4 @@
-module github.com/syron/nodiniteexporter
+module github.com/syron/nodiniteexporter/nodiniteexporter
 
 go 1.19
 
