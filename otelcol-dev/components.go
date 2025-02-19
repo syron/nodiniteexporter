@@ -14,7 +14,7 @@ import (
 	otlpexporter "go.opentelemetry.io/collector/exporter/otlpexporter"
 	batchprocessor "go.opentelemetry.io/collector/processor/batchprocessor"
 	otlpreceiver "go.opentelemetry.io/collector/receiver/otlpreceiver"
-	nodiniteexporter "github.com/syron/nodiniteexporter/nodiniteexporter"
+	nodiniteexporter "github.com/syron/nodiniteexporter"
 )
 
 func components() (otelcol.Factories, error) {
@@ -48,7 +48,7 @@ func components() (otelcol.Factories, error) {
 	factories.ExporterModules = make(map[component.Type]string, len(factories.Exporters))
 	factories.ExporterModules[debugexporter.NewFactory().Type()] = "go.opentelemetry.io/collector/exporter/debugexporter v0.118.0"
 	factories.ExporterModules[otlpexporter.NewFactory().Type()] = "go.opentelemetry.io/collector/exporter/otlpexporter v0.118.0"
-	factories.ExporterModules[nodiniteexporter.NewFactory().Type()] = "github.com/syron/nodiniteexporter/nodiniteexporter"
+	factories.ExporterModules[nodiniteexporter.NewFactory().Type()] = "github.com/syron/nodiniteexporter"
 	factories.Processors, err = processor.MakeFactoryMap(
 		batchprocessor.NewFactory(),
 	)
