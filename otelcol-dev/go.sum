@@ -103,8 +103,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOfJA=
 github.com/stretchr/testify v1.10.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
-github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250219160740-2fa574feca5f h1:YQSxZ4w10u+9tSbYqGfFME7CyOZrH3dSZYo88Q6R9p8=
-github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250219160740-2fa574feca5f/go.mod h1:3OLtv/wYGV/aoMlRCIYi8BrDpbw2XlXrn3HgJLvcAcY=
+github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250220151613-baa8b49850e8 h1:HyJau1xAq0x0MZGi2Z/s5DK3Zz/u90V7TDsnd8bplMo=
+github.com/syron/nodiniteexporter/nodiniteexporter v0.0.0-20250220151613-baa8b49850e8/go.mod h1:M3ZVc8dml76dEQOZMXwh2+J409enZEVe37oQkLWWRXQ=
 github.com/tklauser/go-sysconf v0.3.14 h1:g5vzr9iPFFz24v2KZXs/pvpvh8/V9Fw6vQK5ZZb78yU=
 github.com/tklauser/go-sysconf v0.3.14/go.mod h1:1ym4lWMLUOhuBOPGtRcJm7tEGX4SCYNEEEtghGG/8uY=
 github.com/tklauser/numcpus v0.9.0 h1:lmyCHtANi8aRUgkckBgoDk1nHCux3n2cgkJLXdQGPDo=
@@ -181,6 +181,8 @@ go.opentelemetry.io/collector/exporter/exporterhelper/xexporterhelper v0.120.0 h
 go.opentelemetry.io/collector/exporter/exporterhelper/xexporterhelper v0.120.0/go.mod h1:1GYlI2dvT0yl+n3KuRI0x+RQr+ppzzGsEUHHY4citk0=
 go.opentelemetry.io/collector/exporter/exportertest v0.120.0 h1:7ABriAYXGxvUdCXxe0LpsrMGQ+BP5z/gadm1gRWbD4o=
 go.opentelemetry.io/collector/exporter/exportertest v0.120.0/go.mod h1:t0hONsvJp5MM1EF1l83voJHcharIPdnpUBP42UhCoCY=
+go.opentelemetry.io/collector/exporter/otlpexporter v0.120.0 h1:oxfHKZHEwN87fycLNt97P1MaijYdR15tsEd4VkZxxss=
+go.opentelemetry.io/collector/exporter/otlpexporter v0.120.0/go.mod h1:pI9POQR3jzhOY3+hNNhjpo/yTUrmHHdqvQqyUEO0pCw=
 go.opentelemetry.io/collector/exporter/xexporter v0.120.0 h1:HSe3a+0lt/o/g8GgNKgkw9y9vULN4QeY6NeKms8j/GI=
 go.opentelemetry.io/collector/exporter/xexporter v0.120.0/go.mod h1:P/87SRTCd/PnQhwAQbELAxotp5gIewT/vpOfEWJZPLk=
 go.opentelemetry.io/collector/extension v0.120.0 h1:CA2e6jF5Sz6PE+yxGbJUn0QTMwTo28MO8FNBhdKAABw=

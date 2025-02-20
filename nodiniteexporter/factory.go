@@ -5,6 +5,7 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter"
+	"go.opentelemetry.io/collector/exporter/exporterhelper"
 )
 
 var (
@@ -16,16 +17,7 @@ func NewFactory() exporter.Factory {
 	return exporter.NewFactory(
 		typeStr,
 		createDefaultConfig,
-		// Uncomment the exporter type that you would like, change the second parameter as you like. Available options
-		//are listed below:
-		// component.StabilityLevelUndefined
-		// component.StabilityLevelUnmaintained
-		// component.StabilityLevelDeprecated
-		// component.StabilityLevelDevelopment
-		// component.StabilityLevelAlpha
-		// component.StabilityLevelBeta
-		// component.StabilityLevelStable
-		exporter.WithLogs(createLogsExporter, component.StabilityLevelAlpha),
+		exporter.WithLogs(createLogsExporter, component.StabilityLevelDevelopment),
 	)
 }
 
@@ -33,13 +25,14 @@ func createDefaultConfig() component.Config {
 
 	return &config{}
 }
+
 func createLogsExporter(
 	ctx context.Context,
-	set exporter.CreateSettings,
+	set exporter.Settings,
 	cfg component.Config,
 ) (exporter.Logs, error) {
 
-	return exporterhelper.NewLogsExporter(ctx, set, cfg,
+	return exporterhelper.NewLogs(ctx, set, cfg,
 		pushLogs,
 		//	The parameters below are optional. Uncomment any as you need.
 		//	exporterhelper.WithStart(start component.StartFunc),
