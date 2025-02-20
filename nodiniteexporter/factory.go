@@ -1,16 +1,14 @@
-package nodiniteexporter
+﻿package nodiniteexporter
 
 import (
 	"context"
-	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter"
 )
 
-const (
-	// typeStr is the type of the exporter
-	typeStr = "nodiniteexporter"
+var (
+	typeStr = component.MustNewType("nodinite")
 )
 
 // NewFactory creates a Datadog exporter factory
@@ -27,8 +25,7 @@ func NewFactory() exporter.Factory {
 		// component.StabilityLevelAlpha
 		// component.StabilityLevelBeta
 		// component.StabilityLevelStable
-        exporter.WithLogs(createLogsExporter, component.StabilityLevelAlpha),
-        
+		exporter.WithLogs(createLogsExporter, component.StabilityLevelAlpha),
 	)
 }
 

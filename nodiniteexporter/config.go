@@ -1,8 +1,6 @@
-package nodiniteexporter
+﻿package nodiniteexporter
 
-import (
-	"go.opentelemetry.io/collector/component"
-)
+import "go.opentelemetry.io/collector/component"
 
 // Config defines configuration for your exporter.
 type config struct {
