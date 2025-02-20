@@ -10,14 +10,14 @@ processors:
 exporters:
   debug:
     verbosity: detailed
-  nodiniteexporter:
+  nodinite:
 
 service:
   pipelines:
-    metrics:
+    logs:
       receivers: [otlp]
       processors: [batch]
-      exporters: [debug,nodiniteexporter]
+      exporters: [debug,nodinite]
   telemetry:
     logs:
       level: debug
