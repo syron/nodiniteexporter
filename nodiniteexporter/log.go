@@ -12,5 +12,6 @@ func pushLogs(
 	ctx context.Context,
 	td plog.Logs,
 ) (err error) {
+
 	return nil
 }
